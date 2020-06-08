@@ -1,0 +1,2 @@
+rootProject.name='VOA News'
+include ':app'

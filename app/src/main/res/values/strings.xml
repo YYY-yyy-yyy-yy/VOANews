@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VOA News</string>
+    <string name="user_label">User</string>
+    <string name="pass_label">Password</string>
+    <string name="reg_label">Register</string>
+    <string name="login_label">Login</string>
+</resources>

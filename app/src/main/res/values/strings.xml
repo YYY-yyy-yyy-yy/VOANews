@@ -4,4 +4,10 @@
     <string name="pass_label">Password</string>
     <string name="reg_label">Register</string>
     <string name="login_label">Login</string>
+    <string name="Con_label">Confirm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_fragment">Setting</string>
+    <string name="main_fragment">Main</string>
 </resources>

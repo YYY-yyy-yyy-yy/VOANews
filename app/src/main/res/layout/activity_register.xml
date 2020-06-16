@@ -9,6 +9,7 @@
     android:paddingTop="36dp"
     android:paddingRight="36dp"
     android:paddingBottom="36dp"
+    android:background="@mipmap/bg_register"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:text="@string/pass_label"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/Register_password"
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:textSize="25sp" />
     </LinearLayout>
 
@@ -65,7 +66,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40sp"
         android:onClick="onClick"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@drawable/buntton_shape"
         android:text="@string/Con_label" />
 
 </LinearLayout>

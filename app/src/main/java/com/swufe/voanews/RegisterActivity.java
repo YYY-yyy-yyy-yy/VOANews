@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity{
         }else{
             manager.add(new UserItem(name,pass));
             Log.i(TAG,"onClick:写入数据完毕");
-            Intent config = new Intent(this, MainActivity.class);
+            Intent config = new Intent(this, ShowActivity.class);
             startActivity(config);
         }
     }

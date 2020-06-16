@@ -7,7 +7,26 @@
     <string name="Con_label">Confirm</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="setting_fragment">Setting</string>
-    <string name="main_fragment">Main</string>
+    <string name="main_fragment" translatable="false">Main</string>
+    <string name="wait" translatable="false">Getting the news</string>
+    <string name="hint">Click the button to query all news</string>
+    <string name="sure">Congirm</string>
+    <string name="menu_search">Search</string>
+    <string name="text_user">Name</string>
+    <string name="show_pass">Password</string>
+    <string name="eval">Evaluate</string>
+    <string name="show_delete">Delete an account</string>
+    <string name="log">Log out</string>
+    <string name="shitou">shitou</string>
+    <string name="title_activity_relax2" translatable="false">Sign in</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
 </resources>

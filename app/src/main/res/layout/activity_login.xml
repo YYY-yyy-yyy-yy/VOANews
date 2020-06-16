@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@mipmap/bg_login"
     android:paddingLeft="36dp"
     android:paddingTop="36dp"
     android:paddingRight="36dp"
     android:paddingBottom="36dp"
+
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -46,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:text="@string/pass_label"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/Login_password"
@@ -54,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:textSize="25sp" />
     </LinearLayout>
 
@@ -71,8 +73,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginRight="40dp"
+            android:textSize="20sp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_bright"
+            android:background="@drawable/buntton_shape"
             android:text="@string/login_label"
             tools:text="@string/login_label" />
 
@@ -84,8 +87,22 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            android:background="@drawable/buntton_shape"
             android:text="@string/reg_label" />
     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
 
 </LinearLayout>

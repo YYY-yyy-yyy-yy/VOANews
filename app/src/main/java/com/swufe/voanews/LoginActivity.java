@@ -13,8 +13,6 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     EditText user;
     EditText password;
-//    private Handler mHandler;
-//    private OnMainListener mainListener;
     private final  String TAG = "LoginActivity";
 
     @Override
@@ -44,53 +42,12 @@ public class LoginActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putString("name",name);
                 bundle.putString("pass",pass);
-//                Message msg = new Message();
-//                msg.what = 1;
-//                dataChange.setDataChange(bundle);
-//                msg.obj = bundle;
-//                mHandler.sendMessage(msg);
                 Intent config = new Intent(this, ShowActivity.class);
 
                 SettingFragment fragment = new SettingFragment(name, pass);
-                fragment.setArguments(bundle);//数据传递到fragment中
-                 FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.framelayout,fragment);
-                fragmentTransaction.commit();
                 startActivity(config);
-
-//                fragment.setArguments(bundle);
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                fragmentTransaction.commit();
 
             }
         }
     }
-//    public void onAttachFragment(SettingFragment fragment) {
-//        try {
-//            mainListener = (OnMainListener)fragment;
-//
-//
-//        } catch (Exception e) {
-//            throw new ClassCastException(this.toString() + " must implementOnMainListener");
-//        }
-//        super.onAttachFragment(fragment);
-//
-//    }
-
-
-//    public void setHandler(Handler handler) {
-//        mHandler = handler;
-//    }
-//private static DataChange dataChange;
-//    public void setData(DataChange dataChange)
-//    {
-//        this.dataChange = dataChange;
-//    }
-//
-//    public interface DataChange  {
-//        void setDataChange(Bundle bundle);
-//
-//    }
 }

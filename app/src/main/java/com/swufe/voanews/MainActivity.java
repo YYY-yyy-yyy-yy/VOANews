@@ -166,21 +166,12 @@ public class MainActivity extends ListActivity implements Runnable, AdapterView.
         NewsManager manager = new NewsManager(this);
         String url = manager.queryNews_urlByNewsTitle(titleStr);
         String category = manager.queryCategoryByNewsTitle(titleStr);
-//        Intent news_url = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-//        startActivity(news_url);
-
-//        TextView title = view.findViewById(R.id.newsTitle);
-//        Log.i(TAG, String.valueOf(title));
-//        String categoryStr = map.get("category");
-//        Log.i(TAG,titleStr+"-->"+categoryStr);
-
         //打开新的页面传入参数
         Intent news = new Intent(this,NewsActivity.class);
         news.putExtra("news_url",url);
         news.putExtra("news_Title",titleStr);
         news.putExtra("category",category);
         startActivity(news);
-//        startActivityForResult(news,2);
     }
 
     @Override
